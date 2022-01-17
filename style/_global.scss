@@ -1,0 +1,105 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+ }
+ body{
+     font-family: 'Public Sans', sans-serif;
+ }
+a{
+    text-decoration: none;
+    font-size: $menu-links-size;
+}
+ul{
+    list-style-type: none;
+}
+
+
+
+// p tag mobile size
+p{
+    font-size: $p-size-desktop !important;
+    line-height: 1.5;
+    color: $Grayish-Blue;
+
+    @media(max-width: 370px){
+        font-size: $p-size-mobile !important;
+        max-width: 350px;
+    }
+}
+
+// h2 tag for desktop
+h2{
+    font-size: $h2-size-desktop;
+    color: $Dark-Blue;
+    font-weight: $font-wieght-medium;
+
+    @media(max-width: 370px){
+        font-size: $h2-size-mobile;
+    }
+}
+
+// h4 tag for desktpp
+h4{
+    font-size: $h4-size-desktop;
+    color: $Dark-Blue;
+    font-weight: $font-wieght-medium;
+    margin-bottom: 34px;
+
+    @media(max-width: 800px){
+        margin-bottom: 27px;
+    }
+}
+
+// section 1 logo
+.logo{
+    margin-bottom: 30px;
+
+    @media(max-width: 800px){
+        margin-bottom: 20px;
+    }
+}
+
+// section 2 image section
+.image-container{
+    width: 100%;
+}
+.padding{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 33px;
+}
+
+
+
+
+.wrapper{
+    width: 90%;
+    max-width: 1113px;
+    margin: 0 auto;
+}
+.wrap{
+    width: 90%;
+    max-width: 1113px;
+}
+.btn{
+    display: inline-block;
+    background-image: linear-gradient(to right, $Lime-Green, $right-Cyan);
+    padding: 13px 30px;
+    border-radius: 70px;
+    color: $White;
+    font-weight: $font-wieght-large;
+
+    transition: opacity 300ms ease-in-out;
+
+    &:hover{
+        opacity: 50%;
+    }
+}
+.active{
+    // display: flex !important;
+    top: 69px !important;
+}
+.hide{
+    display: none !important;
+}
