@@ -313,11 +313,13 @@ header .grid .main-title h1 {
 @media (max-width: 800px) {
   header .grid .main-title h1 {
     margin-top: 0;
+    text-align: center;
   }
 }
 
 @media (max-width: 370px) {
   header .grid .main-title h1 {
+    text-align: center;
     font-size: 1.875rem;
     max-width: 300px;
   }
